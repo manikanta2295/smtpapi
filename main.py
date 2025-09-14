@@ -53,5 +53,5 @@ def send_mail(name: str = Form(...), email: str = Form(...), message: str = Form
     )
     send_email(email, USER_EMAIL, "We Received Your Message", user_body)
 
-    return { "success": true, "message": "Emails sent successfully!" }
+    return { "success": True, "message": "Emails sent successfully!" }
 
