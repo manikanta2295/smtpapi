@@ -11,7 +11,7 @@ app = FastAPI(title="FastAPI Gmail Contact Mailer")
 # Enable CORS so your frontend can call the backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # replace "*" with your frontend domain for production
+    allow_origins=["https://your-frontend.vercel.app"],  # replace "*" with your frontend domain for production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
